@@ -32,7 +32,22 @@
   .content{
     top:100px;
     height:400px;
+    display: flex;
   }
+
+
+.image{
+  float: right;
+  height: 20px;
+}
+.image img{
+  height: 400px;
+  width: 700px;
+
+  
+}
+
+
   .find{
     float:left;
   }
@@ -42,7 +57,7 @@
   }
   .list-item{
     float: left;
-    width: 40%;
+    width: 50%;
   }
   .search{
     width:150px;
@@ -97,7 +112,7 @@
 
 
     <div class="content">
-      <div class="find">
+        <div class="find">
           <h2>Find available<br>coworking spaces</h2>
           <p>Check the boxes that describe <br>the coworking 
             space you're looking for.<br> Select search to find results.</p>
@@ -110,7 +125,10 @@
             <li class="list-item"><input type="checkbox">Location</li>
           </ul>
           <br>
-          <button class="search">Search</button>  
+          <button class="search">Search</button>
+        </div>
+        <div class="image">
+          <img src="coworking spaces.jpeg" alt="spaces">
         </div>
     </div>
 
@@ -150,7 +168,7 @@
           <br>
           <button>Send</button>
       </div>
-  </div>
+    </div>
 
 
     
