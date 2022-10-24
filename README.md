@@ -19,6 +19,6 @@ Burndown Screenshot 3:
 
 Repo URL: https://github.com/paytonmeuw/IS424GroupProject
 
-Scrum Mettings:
+Scrum Meetings:
 
 Sprint Review:
