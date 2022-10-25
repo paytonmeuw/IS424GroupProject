@@ -12,6 +12,8 @@ As a user I want to be able to login
 As a user I want to be able to contact the administrators
 
 Table:
+<img width="477" alt="Screen Shot 2022-10-24 at 9 54 22 PM" src="https://user-images.githubusercontent.com/70721470/197671259-7311a645-4591-4e45-93d4-4d0d3a07332a.png">
+
 
 Burndown Screenshot 1:
 
