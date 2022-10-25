@@ -2,6 +2,13 @@
 
 Link to Trello: https://trello.com/b/IbYhDJZ2/is-424-group-project
 
+Justinmind prototype: Prototype2.vp
+
+Websites For Inspiration: 
+https://www.coworker.com/
+https://www.wework.com/
+
+
 User Stories:
 As a user I need to be able to access all coworking information in my area.
 As a user I need an easy to use and visually appealing website.
