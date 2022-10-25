@@ -34,6 +34,7 @@ Burndown Screenshot 3:
 Repo URL: https://github.com/paytonmeuw/IS424GroupProject
 
 Scrum Meetings:
+
 1st Scrum meeting:
 Ashley:
 a. What did you do yesterday?
@@ -160,6 +161,7 @@ Having to make sure the pages we are thinking of adding to the prototype match w
 
 
 Sprint Review:
+
 a. What did you learn from doing our first sprint?
 
 In our first sprint we learned that communication and strategic planning goes a long way when the actual implementation of the work and project needs to be incorporated. Although planning ahead and subdividing the project work into user stories takes time, it was ultimately found to be helpful and provided a good structure for the team to follow and stay organized. 
