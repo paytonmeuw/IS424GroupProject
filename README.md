@@ -9,17 +9,25 @@ https://www.wework.com/
 
 User Stories:
 As a user I need to be able to access all coworking information in my area.
+
 As a user I need an easy to use and visually appealing website.
+
 For future sprints:
+
 As a user I want to be able to create an account
+
 As a user I want to be able to filter
+
 As a user I want to be able to access social media accounts
+
 As a user I want to be able to login
+
 As a user I want to be able to contact the administrators
+
 
 Table:
 <img width="477" alt="Screen Shot 2022-10-24 at 9 54 22 PM" src="https://user-images.githubusercontent.com/70721470/197671259-7311a645-4591-4e45-93d4-4d0d3a07332a.png">
-
+*Some items related to user stories for future sprints
 
 Burndown Screenshot 1:
 
