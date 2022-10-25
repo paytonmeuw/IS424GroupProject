@@ -10,6 +10,7 @@ https://www.wework.com/
 User Stories:
 As a user I need to be able to access all coworking information in my area.
 As a user I need an easy to use and visually appealing website.
+For future sprints:
 As a user I want to be able to create an account
 As a user I want to be able to filter
 As a user I want to be able to access social media accounts
