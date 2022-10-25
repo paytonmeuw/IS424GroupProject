@@ -36,6 +36,7 @@ Repo URL: https://github.com/paytonmeuw/IS424GroupProject
 Scrum Meetings:
 
 1st Scrum meeting:
+
 Ashley:
 a. What did you do yesterday?
 Planned out what tasks should be included in Sprint one and duration. 
@@ -77,6 +78,7 @@ c. Any problems are you facing?
 Just have to make sure everyone is ok with the tasks they have been assigned. 
 
 2nd Scrum meeting:
+
 Ashley:
 a. What did you do yesterday?
 Finished cleaning up the prototype and getting feedback from the team.
@@ -119,6 +121,7 @@ Just have to work with Ethan to make sure the login button is recognizing users 
 
 
 3rd Scrum meeting: 
+
 Ashley:
 a. What did you do yesterday?
 Have the final version of the prototype ready to go and worked with Payton to see if there’s any pages that need to be added. 
