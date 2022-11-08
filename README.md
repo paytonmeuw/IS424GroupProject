@@ -2,18 +2,32 @@
 
 Link to Trello: https://trello.com/b/IbYhDJZ2/is-424-group-project
 
+Websites For Inspiration: 
+https://www.coworker.com/
+https://www.wework.com/
+
+
 User Stories:
 As a user I need to be able to access all coworking information in my area.
+
 As a user I need an easy to use and visually appealing website.
+
+For future sprints:
+
 As a user I want to be able to create an account
+
 As a user I want to be able to filter
+
 As a user I want to be able to access social media accounts
+
 As a user I want to be able to login
+
 As a user I want to be able to contact the administrators
+
 
 Table:
 <img width="477" alt="Screen Shot 2022-10-24 at 9 54 22 PM" src="https://user-images.githubusercontent.com/70721470/197671259-7311a645-4591-4e45-93d4-4d0d3a07332a.png">
-
+*Some items related to user stories for future sprints
 
 Burndown Screenshot 1:
 
@@ -34,7 +48,9 @@ Burndown Screenshot 3:
 Repo URL: https://github.com/paytonmeuw/IS424GroupProject
 
 Scrum Meetings:
+
 1st Scrum meeting:
+
 Ashley:
 a. What did you do yesterday?
 Planned out what tasks should be included in Sprint one and duration. 
@@ -76,6 +92,7 @@ c. Any problems are you facing?
 Just have to make sure everyone is ok with the tasks they have been assigned. 
 
 2nd Scrum meeting:
+
 Ashley:
 a. What did you do yesterday?
 Finished cleaning up the prototype and getting feedback from the team.
@@ -118,6 +135,7 @@ Just have to work with Ethan to make sure the login button is recognizing users 
 
 
 3rd Scrum meeting: 
+
 Ashley:
 a. What did you do yesterday?
 Have the final version of the prototype ready to go and worked with Payton to see if there’s any pages that need to be added. 
@@ -160,6 +178,7 @@ Having to make sure the pages we are thinking of adding to the prototype match w
 
 
 Sprint Review:
+
 a. What did you learn from doing our first sprint?
 
 In our first sprint we learned that communication and strategic planning goes a long way when the actual implementation of the work and project needs to be incorporated. Although planning ahead and subdividing the project work into user stories takes time, it was ultimately found to be helpful and provided a good structure for the team to follow and stay organized. 
@@ -183,5 +202,5 @@ As a team who is experiencing working within a sprint for the first time that in
 
 f. Which group was invited? What are your observations/notes? Everybody was present?
 
-The other group working for the client of  a small service IT provider was invited to our sprint review. Similar to us, they also experienced difficulties in the beginning of their sprint but were able to surpass these difficulties as the sprint carried on. One observation we had about the other team’s project was their use of Bulma throughout their main page. Incorporating Bulma into their website allowed them to have some cool design aspects that our team thought was interesting and worth the efforts of looking into. Everyone was present at this sprint review and this was an interesting opportunity to collaborate with others and share advice amongst ourselves. 
+The other group working for the client of  a small service IT provider was invited to our sprint review. Similar to us, they also experienced difficulties in the beginning of their sprint but were able to surpass these difficulties as the sprint carried on. Obviously we are just in the first stages of the website but it was interesting to see how they took on the challenge of implementing their prototype with code. Noah from the other team was present at this sprint review and this was an interesting opportunity to collaborate with others and share advice amongst ourselves. 
 
