@@ -17,12 +17,45 @@
     float:left;
     padding-left: 2.5%;
   }
-  .login{
+  #login{
     float:right;
     padding: 10px 50px;
     font-size: 15px;
     margin-top: 25px;
-    margin-right: 25px
+    margin-right: 25px;
+    background: white;
+    border: solid black 3px;
+    border-radius: 3px;
+    font-family: 'Soleil', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 100ms ease-in;
+  }
+  #login:hover{
+    cursor: pointer;
+    background-color: black;
+    border-color: white;
+    color: white;
+  }
+  #signup{
+    float:right;
+    padding: 10px 50px;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-right: 25px;
+    background: white;
+    border: solid black 3px;
+    border-radius: 3px;
+    font-family: 'Soleil', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 100ms ease-in;
+  }
+  #signup:hover{
+    cursor: pointer;
+    background-color: black;
+    border-color: white;
+    color: white;
   }
   .signup{
     float:right;
@@ -105,15 +138,109 @@
     
    }
 
+  #login-background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(30,30,30,0.8);
+    align-items: center;
+    display: none;
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+  }
+
+  #login-window{
+    height: 80vh;
+    width: 35%;
+    position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+    background-color: white;
+    display: none;
+    z-index: 10;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 200ms ease-in;
+  }
+
+  #signup-window{
+    height: 80vh;
+    width: 35%;
+    position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+    background-color: white;
+    display: none;
+    z-index: 10;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 200ms ease-in;
+  }
+
+  #logintext{
+    font-family: 'Soleil', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20vh;
+  }
+
+  #login-input{
+    margin-top: 3vh;
+    width: 60%;
+    height: 6vh;
+    border: solid black 1.5px;
+    border-radius: 5px;
+  }
+
+  #login-button{
+    margin-left: 20%;
+    line-height: 6vh;
+    display: block;
+    text-align: center;
+    margin-top: 3vh;
+    width: 60%;
+    height: 6vh;
+    border: solid black 1.5px;
+    border-radius: 5px;
+    font-family: 'Soleil', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 100ms ease-in;
+  }
+
+  #login-button:hover{
+    cursor: pointer;
+    background-color: black;
+    border-color: white;
+    color: white;
+  }
+
   </style>
   
   
   <body>
-
+    <div id="login-background">
+    </div>
+    <div id="login-window">
+      <p id="logintext">Log in</p>
+      <input type="text" name="email" placeholder="Email" id="login-input">
+      <input type="text" name="password" placeholder="Password" id="login-input">
+      <div id="login-button">Login</div>
+    </div>
+    <div id="signup-window">
+      <p id="logintext">Sign up</p>
+      <input type="text" name="email" placeholder="Email" id="login-input">
+      <input type="text" name="password" placeholder="Password" id="login-input">
+      <input type="text" name="password" placeholder="Verification" id="login-input">
+      <div id="login-button">Signup</div>
+    </div>
     <div class="header">
       <h1 class="headertext">Coworking Madison</h1>
-      <button class="login">Login</button>
-      <button class="signup">Sign Up</button>
+      <button id="login">Login</button>
+      <button id="signup">Signup</button>
+
     </div>
   
 
@@ -180,8 +307,9 @@
     </div>
 
 
+
     
 </div> 
-
+<script src="app.js"></script>
   </body>
 </html>
