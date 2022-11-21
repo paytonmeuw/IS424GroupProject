@@ -1,12 +1,18 @@
 User Stories:
+
 -As a user I want to be able to create an account
+
 -As a user I want to be able to filter 
+
 -As a user I want to be able to access social media accounts 
+
 -As a user I want to be able to login
+
 -As a user I want to be able to contact the administrators 
 
 
 Tasks:
+
 <img width="504" alt="Screen Shot 2022-11-20 at 9 47 14 PM" src="https://user-images.githubusercontent.com/70721470/202961514-1975a3ff-ff5d-4626-89cc-aa338d87d1b8.png">
 
 Trello Board including stories and tasks: https://trello.com/b/IbYhDJZ2/is-424-group-project 
@@ -31,7 +37,9 @@ Burndown Chart (With no BurnUp Data) as of Sprint End  (Nov 20)
 
 
 Daily Scrum Meeting #1:
+
 Ashley
+
 a. What did you do yesterday?
 
 Created a context level diagram and the level 0 data flow diagram. Reviewed these diagrams with the team and made adjustments accordingly. 
@@ -45,6 +53,7 @@ c. Any problems are you facing?
 Currently my VSCode is having problems in fetching and pulling data from Github. Errors keep arising and I am having difficulty troubleshooting why this is happening. 
 
 Ethan
+
 a. What did you do yesterday?
 
 Did research to properly set up the sprint burndown chart tracking using the trello embedded tools instead of microsoft excel or an alternative external tool.
@@ -58,6 +67,7 @@ c. Any problems are you facing?
 It is difficult to define different time based tracking windows within trello, and linking the board directly to our existing tickets and backlog is proving difficult.
 
 Abhi
+
 a. What did you do yesterday?
 
 Assisted with drafting diagrams. 
@@ -71,6 +81,7 @@ c. Any problems are you facing?
 Not currently. 
 
 Yifan
+
 a. What did you do yesterday?
 
 Based on the data flow diagram level 0, I finished the data flow diagram level 1.Reviewed the diagrams with the team and made adjustments accordingly. 
