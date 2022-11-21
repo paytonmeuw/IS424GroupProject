@@ -35,6 +35,13 @@ Burndown Chart (With no BurnUp Data) as of Sprint End  (Nov 20)
 <img width="500" alt="Screen Shot 2022-11-20 at 9 48 58 PM" src="https://user-images.githubusercontent.com/70721470/202961684-bc065902-3df3-4cc0-9fb5-dc27fec6d47c.png">
 
 
+
+Database:
+
+<img width="434" alt="Screen Shot 2022-11-20 at 9 58 01 PM" src="https://user-images.githubusercontent.com/70721470/202962549-e8d506b2-7333-48aa-80ac-f7d5db61abe3.png">
+
+
+
 Daily Scrum Meeting #1:
 
 Ashley
