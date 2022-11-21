@@ -20,20 +20,19 @@ Trello Board including stories and tasks: https://trello.com/b/IbYhDJZ2/is-424-g
 
 Burndown charts using “BURNDOWN FOR TRELLO”:
 
-<img width="497" alt="Screen Shot 2022-11-20 at 9 48 10 PM" src="https://user-images.githubusercontent.com/70721470/202961603-91851c56-679f-46dc-a455-fd228383b98f.png">
-
 Burndown Chart (With BurnUp Data) as of Sprint Day 4 (Nov 11)
 
-
-<img width="498" alt="Screen Shot 2022-11-20 at 9 48 36 PM" src="https://user-images.githubusercontent.com/70721470/202961653-c42421ce-6c7b-41e9-843e-a24579a1f75e.png">
+<img width="497" alt="Screen Shot 2022-11-20 at 9 48 10 PM" src="https://user-images.githubusercontent.com/70721470/202961603-91851c56-679f-46dc-a455-fd228383b98f.png">
 
 
 Burndown Chart (With BurnUp Data) as of Sprint Day 10  (Nov 18)
 
+<img width="498" alt="Screen Shot 2022-11-20 at 9 48 36 PM" src="https://user-images.githubusercontent.com/70721470/202961653-c42421ce-6c7b-41e9-843e-a24579a1f75e.png">
 
-<img width="500" alt="Screen Shot 2022-11-20 at 9 48 58 PM" src="https://user-images.githubusercontent.com/70721470/202961684-bc065902-3df3-4cc0-9fb5-dc27fec6d47c.png">
 
 Burndown Chart (With no BurnUp Data) as of Sprint End  (Nov 20) 
+
+<img width="500" alt="Screen Shot 2022-11-20 at 9 48 58 PM" src="https://user-images.githubusercontent.com/70721470/202961684-bc065902-3df3-4cc0-9fb5-dc27fec6d47c.png">
 
 
 Daily Scrum Meeting #1:
