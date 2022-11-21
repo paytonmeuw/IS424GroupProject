@@ -15,6 +15,13 @@ Tasks:
 
 <img width="504" alt="Screen Shot 2022-11-20 at 9 47 14 PM" src="https://user-images.githubusercontent.com/70721470/202961514-1975a3ff-ff5d-4626-89cc-aa338d87d1b8.png">
 
+
+Research Spreadsheet:
+
+https://docs.google.com/spreadsheets/d/1DSaDs5-QYvmCFzQsT5jXLdOPhY-Wjnuj3r1s44Wb2bw/edit?usp=sharing
+
+
+
 Trello Board including stories and tasks: https://trello.com/b/IbYhDJZ2/is-424-group-project 
 
 
