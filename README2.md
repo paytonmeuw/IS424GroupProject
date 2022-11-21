@@ -83,15 +83,16 @@ Abhi
 
 a. What did you do yesterday?
 
-Assisted with drafting diagrams. 
+
+Assisted with drafting diagrams and looking at if there’s any way to fix them. Specifically, I looked at the cardinality of the activity diagrams. 
 
 b. What are you planning to do today?
 
-Complete diagrams. 
+Complete the diagrams with other group members and finalize them. 
 
 c. Any problems are you facing?
 
-Not currently. 
+Not sure if the diagrams are similar to what Joseph is looking for and if we are missing anything.
 
 Yifan
 
@@ -156,15 +157,15 @@ Abhi
 
 a. What did you do yesterday?
 
-Added content to footer of the website.
+Added content to the footer of the website including contact information and social media accounts.
 
 b. What are you planning to do today?
 
-Start working on creating a filter for the website. 
+Start working on creating a filter for the website which includes preferences for the search bar. 
 
 c. Any problems are you facing?
 
-Needed to do some review of code to remember how to make it work. 
+Needed to do some review of code to remember how to make it work especially for bulma and making sure it doesn’t reformat the code. 
 
 Yifan
 
@@ -219,7 +220,9 @@ As a team we are quite satisfied with what has been completed so far. At present
 
 f. Which group was invited? What are your observations/notes? 
 
-We invited the other group. Noticed that they have made a lot of progress throughout this sprint. 
+We invited the other group. Noticed that they have made a lot of progress throughout this sprint. Specifically, they made progress with the development of their website and certain features. They added new pages which include a task list, conversation history, and quick notes all with distinct, cool features. Some areas of improvement for them that they acknowledge were communication and having more frequent sprint meetings.
+
+The other group also had a chance to take a look at our project and the progress we have made. They really enjoyed that we have a place for preferences that can be checked off to further filter off. They took notes on how the main page was well organized and worked cohesively. 
 
 Everybody was present?
 
