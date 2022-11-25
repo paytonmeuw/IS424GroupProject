@@ -37,8 +37,24 @@
  .content{
     top:100px;
     height:500px;
-    display: flex;
+    
   }
+ .container{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .p1{
+    padding: 20px;
+    flex: 30%;
+ }
+ .p2{
+    padding: 20px;
+    flex: 30%;
+ }
+ .p3{
+    padding: 20px;
+    flex: 30%;
+ }
 </style>
 <body>
     
@@ -48,6 +64,24 @@
     </div>
 
     <div class="content">
+        <h3 style="text-align:center">Available Coworking Spaces</h3>
+        <p style="text-align:center">Click to see the detail</p>
+
+        <div class = 'container'>
+            <div class = 'p1'>
+                <img src="sample1.jpeg" alt="spaces">
+                <p>xxx coworking</p>
+            </div>
+            <div class = 'p2'>
+                <img src="sample2.jpeg" alt="spaces">
+                <p>yyy coworking</p>
+            </div>
+            <div class = 'p3' >
+                <img src="sample3.jpeg" alt="spaces">
+                <p>zzz coworking</p>
+    
+            </div>
+        </div>
         
     </div>
 
