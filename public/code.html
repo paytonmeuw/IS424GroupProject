@@ -219,6 +219,28 @@
     color: white;
   }
 
+  #signup-button{
+    margin-left: 20%;
+    line-height: 6vh;
+    display: block;
+    text-align: center;
+    margin-top: 3vh;
+    width: 60%;
+    height: 6vh;
+    border: solid black 1.5px;
+    border-radius: 5px;
+    font-family: 'Soleil', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 100ms ease-in;
+  }
+
+  #signup-button:hover{
+    cursor: pointer;
+    background-color: black;
+    border-color: white;
+    color: white;}
+
   </style>
   
   
@@ -229,14 +251,14 @@
       <p id="logintext">Log in</p>
       <input type="text" name="email" placeholder="Email" id="loginEmailInput">
       <input type="text" name="password" placeholder="Password" id="LoginPasswordInput">
-      <div id="login-button2">Login</div>
+      <div id="login-button">Login</div>
     </div>
     <div id="signup-window">
       <p id="logintext">Sign up</p>
       <input type="text" name="email" placeholder="Email" id="SignupEmailInput">
       <input type="text" name="password" placeholder="Password" id="SignupPasswordInput">
       <input type="text" name="password" placeholder="Verification" id="SignupVerificationInput">
-      <div id="login-button">Signup</div>
+      <div id="signup-button">Signup</div>
     </div>
     <div class="header">
       <h1 class="headertext">Coworking Madison</h1>

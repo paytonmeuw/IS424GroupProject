@@ -30,7 +30,7 @@ loginBackground.onclick = function () {
 };
 
 // //attach sign up --> connect sign up and login with firebase database
-document.querySelector("#login-button").addEventListener("click", (e) => {
+document.querySelector("#signup-button").addEventListener("click", (e) => {
   e.preventDefault();
   let email = document.querySelector(`#SignupEmailInput`).value;
   let password = document.querySelector(`#SignupPasswordInput`).value;
