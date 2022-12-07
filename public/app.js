@@ -29,6 +29,31 @@ loginBackground.onclick = function () {
   }, 200);
 };
 
+// //attach sign up --> connect sign up and login with firebase database
+document.querySelector("#login-button").addEventListener("click", (e) => {
+  e.preventDefault();
+  let email = document.querySelector(`#SignupEmailInput`).value;
+  let password = document.querySelector(`#SignupPasswordInput`).value;
+  console.log(email);
+  console.log(password);
+  // pass values to firebase
+  // sign up user
+  auth
+    .createUserWithEmailAndPassword(email, password)
+    .then(() => {
+      console.log("user created successfully");
+      // close the modal
+      signupModal.classList.remove("is-active");
+      // reset form
+      signup_form.reset();
+    })
+    .catch((error) => {
+      console.log(error.message);
+      let signup_error = document.querySelector("#signup_error");
+      signup_error.innerHTML = `<p> ${error.message} </p>`;
+    });
+});
+
 // let space1 = {
 //   name: "Spaces Capitol East District",
 //   address:

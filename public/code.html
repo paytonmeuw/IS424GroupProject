@@ -73,10 +73,10 @@
   }
 
 
-.image{
+  .image{
   float: right;
   height: 20px;
-}
+  }
 .image img{
   height: 400px;
   width: 700px;
@@ -227,16 +227,15 @@
     </div>
     <div id="login-window">
       <p id="logintext">Log in</p>
-      <input type="text" name="email" placeholder="Email" id="login-input">
-      <input type="text" name="password" placeholder="Password" id="login-input">
-      <div id="login-button">Login</div>
+      <input type="text" name="email" placeholder="Email" id="loginEmailInput">
+      <input type="text" name="password" placeholder="Password" id="LoginPasswordInput">
+      <div id="login-button2">Login</div>
     </div>
     <div id="signup-window">
       <p id="logintext">Sign up</p>
-      <input type="text" name="name" placeholder="Name" id="login-input">
-      <input type="text" name="email" placeholder="Email" id="login-input">
-      <input type="text" name="password" placeholder="Password" id="login-input">
-      <input type="text" name="preferences" placeholder="Preferences" id="login-input">
+      <input type="text" name="email" placeholder="Email" id="SignupEmailInput">
+      <input type="text" name="password" placeholder="Password" id="SignupPasswordInput">
+      <input type="text" name="password" placeholder="Verification" id="SignupVerificationInput">
       <div id="login-button">Signup</div>
     </div>
     <div class="header">
@@ -309,12 +308,48 @@
           <button>Send</button>
       </div>
     </div>
-  
 </div> 
-<script src="app.js"></script>
+<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <script>
+      // TODO
+      // Copy **only** your firebaseConfig from Google Firebae and add it below
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBEfze8nUXtnDFc354vGtCSqSGI1ny91kQ",
+        authDomain: "coworkingmadison.firebaseapp.com",
+        projectId: "coworkingmadison",
+        storageBucket: "coworkingmadison.appspot.com",
+        messagingSenderId: "592765061167",
+        appId: "1:592765061167:web:4c848e44fb774df63ddeda",
+        measurementId: "G-NS0HB0R3G0",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      // define authentication variable
+      let auth = firebase.auth();
+      let db = firebase.firestore();
+
+      // define a storage reference
+      let ref = firebase.storage().ref();
+    </script>
+    <!-- make sure to add your own js file as the last line in index.html file -->
+    <script src="app.js"></script>
 </body>
 </html>
-
 <!-- Footer -->
 <!-- <footer>
 <div class="footer is-active mx-1 my-1">
