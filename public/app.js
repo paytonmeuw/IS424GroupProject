@@ -61,7 +61,9 @@ function fetchdata() {
       let mydocs = snapshot.docs;
       let html = ``;
       mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().description} </p>`;
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p>`;
       });
       document.querySelector("#content").innerHTML = html;
     });
