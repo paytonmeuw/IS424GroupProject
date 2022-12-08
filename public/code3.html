@@ -1,99 +1,110 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-.header{
-    width: 100%;
-    height: 100px;
-    border-bottom: 1px solid lightgray;
-    background-image: linear-gradient(to right, rgb(9, 187, 232), white);
-  }
-  .headertext{
-    float:left;
-    padding-left: 2.5%;
-  }
-  #signout{
-    float:right;
-    padding: 10px 50px;
-    font-size: 15px;
-    margin-top: 25px;
-    margin-right: 25px;
-    background: white;
-    border: solid black 3px;
-    border-radius: 3px;
-    font-family: 'Soleil', Arial, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    transition: 100ms ease-in;
-  }
-  .tail{
-    background-image: linear-gradient(to right, rgb(9, 187, 232), white);
-    height: 15%
- }
- .content{
-    top:100px;
-    height:500px;
- }
-.spaces{
-    display:flex;
-}
-.title{
-    text-align: center;
-}
- 
-
-</style>
-<body>
+  </head>
+  <style>
+    .header {
+      width: 100%;
+      height: 100px;
+      border-bottom: 1px solid lightgray;
+      background-image: linear-gradient(to right, rgb(9, 187, 232), white);
+    }
+    .headertext {
+      float: left;
+      padding-left: 2.5%;
+    }
+    #signout {
+      float: right;
+      padding: 10px 50px;
+      font-size: 15px;
+      margin-top: 25px;
+      margin-right: 25px;
+      background: white;
+      border: solid black 3px;
+      border-radius: 3px;
+      font-family: "Soleil", Arial, sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      transition: 100ms ease-in;
+    }
+    .tail {
+      background-image: linear-gradient(to right, rgb(9, 187, 232), white);
+      height: 15%;
+    }
+    .content {
+      top: 100px;
+      height: 500px;
+    }
+    .spaces {
+      display: flex;
+    }
+    .title {
+      text-align: center;
+    }
+  </style>
+  <body>
     <div class="header">
-        <h1 class="headertext">Coworking Madison</h1>
-        <button id="signout">Sign out</button>
+      <h1 class="headertext">Coworking Madison</h1>
+      <button id="signout">Sign out</button>
     </div>
-  
-    <div class="content">
-        <h2 class = 'title'>xxx Coworking</h2>
-        <div class = 'spaces'>
-            <div class = 'image'>
-                <img src="sample1.jpg" alt="picture">
-            </div>
-          
-          <ul>
-            <li>Description: </li>
-            <br>
-            <li >Location: </li>
-            <br>
-            <li >Hours: </li>
-            <br>
-            <li>Price: </li>
-            <br>
-            <li >Private office: </li>
-            <br>
-            <li >Meeting & Conferencing Room: </li>
-            <br>
-            <li>Events & Community: </li>
-            <br>
-            <li>Parking: </li>
-            <br>
-            <li>Website: </li>
 
-          </ul>
-        
+    <div class="content" id="content">
+      <h2 class="title">xxx Coworking</h2>
+      <div class="spaces">
+        <div class="image">
+          <img src="sample1.jpg" alt="picture" />
         </div>
+      </div>
     </div>
-
-
 
     <div class="tail">
-        
-            <div class="suggestion-text">
-                <p>Affiliated with <a href="https://100state.com/">100 State</a></p>
-                <p>(608) 609-6716</p>
-            </div>
-            
-  
-    </div>  
-</body>
+      <div class="suggestion-text">
+        <p>Affiliated with <a href="https://100state.com/">100 State</a></p>
+        <p>(608) 609-6716</p>
+      </div>
+    </div>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <script>
+      // TODO
+      // Copy **only** your firebaseConfig from Google Firebae and add it below
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBEfze8nUXtnDFc354vGtCSqSGI1ny91kQ",
+        authDomain: "coworkingmadison.firebaseapp.com",
+        projectId: "coworkingmadison",
+        storageBucket: "coworkingmadison.appspot.com",
+        messagingSenderId: "592765061167",
+        appId: "1:592765061167:web:4c848e44fb774df63ddeda",
+        measurementId: "G-NS0HB0R3G0",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      // define authentication variable
+      let auth = firebase.auth();
+      let db = firebase.firestore();
+
+      // define a storage reference
+      let ref = firebase.storage().ref();
+    </script>
+    <!-- make sure to add your own js file as the last line in index.html file -->
+    <script src="app.js"></script>
+  </body>
 </html>
