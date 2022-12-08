@@ -65,7 +65,7 @@ function fetchdata() {
           mydoc.data().description
         } </p>`;
       });
-      document.querySelector("#content").innerHTML = html;
+      document.querySelector("#details").innerHTML = html;
     });
 }
 fetchdata();
