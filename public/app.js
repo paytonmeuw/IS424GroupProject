@@ -13,7 +13,11 @@ function fetchdata1() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space1").innerHTML = html;
     });
@@ -29,7 +33,11 @@ function fetchdata2() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space2").innerHTML = html;
     });
@@ -45,7 +53,11 @@ function fetchdata3() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space3").innerHTML = html;
     });
@@ -61,7 +73,11 @@ function fetchdata4() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space4").innerHTML = html;
     });
@@ -78,7 +94,11 @@ function fetchdata5() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space5").innerHTML = html;
     });
@@ -95,7 +115,11 @@ function fetchdata6() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space6").innerHTML = html;
     });
@@ -111,7 +135,11 @@ function fetchdata7() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space7").innerHTML = html;
     });
@@ -127,7 +155,11 @@ function fetchdata8() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space8").innerHTML = html;
     });
@@ -143,7 +175,11 @@ function fetchdata9() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space9").innerHTML = html;
     });
@@ -159,7 +195,11 @@ function fetchdata10() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space10").innerHTML = html;
     });
@@ -175,7 +215,11 @@ function fetchdata11() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space11").innerHTML = html;
     });
@@ -191,7 +235,11 @@ function fetchdata12() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space12").innerHTML = html;
     });
@@ -207,7 +255,11 @@ function fetchdata13() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p> `;
+        } </p> <p> ${mydoc.data().address} </p> <p> ${
+          mydoc.data().hours
+        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+          mydoc.data().phone
+        } </p> <p> ${mydoc.data().website} </p>`;
       });
       document.querySelector("#space13").innerHTML = html;
     });
