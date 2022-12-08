@@ -2,7 +2,73 @@ const loginBackground = document.getElementById("login-background");
 const loginWindow = document.getElementById("login-window");
 const signupWindow = document.getElementById("signup-window");
 
-function fetchdata() {
+// Pulling details from firebase database
+function fetchdata1() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "Brix Coworking")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space1").innerHTML = html;
+    });
+}
+fetchdata1();
+function fetchdata2() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "Spaces Capitol East District")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space2").innerHTML = html;
+    });
+}
+fetchdata2();
+function fetchdata3() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "Serendipity Labs")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space3").innerHTML = html;
+    });
+}
+fetchdata3();
+function fetchdata4() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "Expansive Madison")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space4").innerHTML = html;
+    });
+}
+fetchdata4();
+
+function fetchdata5() {
   db.collection("coworkingSpaces")
     .where("name", "==", "100 State")
     .get()
@@ -17,7 +83,136 @@ function fetchdata() {
       document.querySelector("#space5").innerHTML = html;
     });
 }
-fetchdata();
+fetchdata5();
+
+function fetchdata6() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "Horizon Coworking")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space6").innerHTML = html;
+    });
+}
+fetchdata6();
+function fetchdata7() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "Lodgic Workplace")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space7").innerHTML = html;
+    });
+}
+fetchdata7();
+function fetchdata8() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "Urban Office Co")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space8").innerHTML = html;
+    });
+}
+fetchdata8();
+function fetchdata9() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "Progress Center for Black Women")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space9").innerHTML = html;
+    });
+}
+fetchdata9();
+function fetchdata10() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "StartingBlock Madison")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space10").innerHTML = html;
+    });
+}
+fetchdata10();
+function fetchdata11() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "Matrix Coworking")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space11").innerHTML = html;
+    });
+}
+fetchdata11();
+function fetchdata12() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "Synergy Coworking")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space12").innerHTML = html;
+    });
+}
+fetchdata12();
+function fetchdata13() {
+  db.collection("coworkingSpaces")
+    .where("name", "==", "Office Evolution")
+    .get()
+    .then((snapshot) => {
+      let mydocs = snapshot.docs;
+      let html = ``;
+      mydocs.forEach((mydoc) => {
+        html += `<p> ${mydoc.data().name} </p> <p> ${
+          mydoc.data().description
+        } </p> `;
+      });
+      document.querySelector("#space13").innerHTML = html;
+    });
+}
+fetchdata13();
 
 document.getElementById("login").onclick = function () {
   loginBackground.style.display = "block";
