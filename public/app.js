@@ -4,6 +4,7 @@ const signupWindow = document.getElementById("signup-window");
 
 function fetchdata() {
   db.collection("coworkingSpaces")
+    .where("name", "==", "100 State")
     .get()
     .then((snapshot) => {
       let mydocs = snapshot.docs;
@@ -13,7 +14,7 @@ function fetchdata() {
           mydoc.data().description
         } </p> `;
       });
-      document.querySelector("#details").innerHTML = html;
+      document.querySelector("#space5").innerHTML = html;
     });
 }
 fetchdata();
