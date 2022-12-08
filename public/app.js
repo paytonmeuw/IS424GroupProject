@@ -1,58 +1,6 @@
 const loginBackground = document.getElementById("login-background");
 const loginWindow = document.getElementById("login-window");
 const signupWindow = document.getElementById("signup-window");
-// document.getElementById("login").onclick = function () {
-//   loginBackground.style.display = "block";
-//   loginWindow.style.display = "block";
-//   setTimeout(function () {
-//     loginBackground.style.opacity = "1";
-//     loginWindow.style.opacity = "1";
-//   }, 50);
-// };
-// document.getElementById("signup").onclick = function () {
-//   loginBackground.style.display = "block";
-//   signupWindow.style.display = "block";
-//   setTimeout(function () {
-//     loginBackground.style.opacity = "1";
-//     signupWindow.style.opacity = "1";
-//   }, 50);
-// };
-
-// loginBackground.onclick = function () {
-//   loginBackground.style.opacity = "0";
-//   loginWindow.style.opacity = "0";
-//   signupWindow.style.opacity = "0";
-//   setTimeout(function () {
-//     loginBackground.style.display = "none";
-//     loginWindow.style.display = "none";
-//     signupWindow.style.display = "none";
-//   }, 200);
-// };
-
-// //attach sign up --> connect sign up and login with firebase database
-// document.querySelector("#signup-button").addEventListener("click", (e) => {
-//   e.preventDefault();
-//   let email = document.querySelector(`#SignupEmailInput`).value;
-//   let password = document.querySelector(`#SignupPasswordInput`).value;
-//   console.log(email);
-//   console.log(password);
-//   // pass values to firebase
-//   // sign up user
-//   auth
-//     .createUserWithEmailAndPassword(email, password)
-//     .then(() => {
-//       console.log("user created successfully");
-//       // close the modal
-//       signupModal.classList.remove("is-active");
-//       // reset form
-//       signup_form.reset();
-//     })
-//     .catch((error) => {
-//       console.log(error.message);
-//       let signup_error = document.querySelector("#signup_error");
-//       signup_error.innerHTML = `<p> ${error.message} </p>`;
-//     });
-// });
 
 function fetchdata() {
   db.collection("coworkingSpaces")
@@ -63,12 +11,65 @@ function fetchdata() {
       mydocs.forEach((mydoc) => {
         html += `<p> ${mydoc.data().name} </p> <p> ${
           mydoc.data().description
-        } </p>`;
+        } </p> `;
       });
       document.querySelector("#details").innerHTML = html;
     });
 }
 fetchdata();
+
+document.getElementById("login").onclick = function () {
+  loginBackground.style.display = "block";
+  loginWindow.style.display = "block";
+  setTimeout(function () {
+    loginBackground.style.opacity = "1";
+    loginWindow.style.opacity = "1";
+  }, 50);
+};
+document.getElementById("signup").onclick = function () {
+  loginBackground.style.display = "block";
+  signupWindow.style.display = "block";
+  setTimeout(function () {
+    loginBackground.style.opacity = "1";
+    signupWindow.style.opacity = "1";
+  }, 50);
+};
+
+loginBackground.onclick = function () {
+  loginBackground.style.opacity = "0";
+  loginWindow.style.opacity = "0";
+  signupWindow.style.opacity = "0";
+  setTimeout(function () {
+    loginBackground.style.display = "none";
+    loginWindow.style.display = "none";
+    signupWindow.style.display = "none";
+  }, 200);
+};
+
+//attach sign up --> connect sign up and login with firebase database
+document.querySelector("#signup-button").addEventListener("click", (e) => {
+  e.preventDefault();
+  let email = document.querySelector(`#SignupEmailInput`).value;
+  let password = document.querySelector(`#SignupPasswordInput`).value;
+  console.log(email);
+  console.log(password);
+  // pass values to firebase
+  // sign up user
+  auth
+    .createUserWithEmailAndPassword(email, password)
+    .then(() => {
+      console.log("user created successfully");
+      // close the modal
+      signupModal.classList.remove("is-active");
+      // reset form
+      signup_form.reset();
+    })
+    .catch((error) => {
+      console.log(error.message);
+      let signup_error = document.querySelector("#signup_error");
+      signup_error.innerHTML = `<p> ${error.message} </p>`;
+    });
+});
 
 // let space1 = {
 //   name: "Spaces Capitol East District",
