@@ -245,30 +245,123 @@
   
   
   <body>
-    <div id="login-background">
-    </div>
-    <div id="login-window">
-      <p id="logintext">Log in</p>
-      <input type="text" name="email" placeholder="Email" id="loginEmailInput">
-      <input type="text" name="password" placeholder="Password" id="LoginPasswordInput">
-      <div id="login-button">Login</div>
-    </div>
-    <div id="signup-window">
-      <p id="logintext">Sign up</p>
-      <input type="text" name="email" placeholder="Email" id="SignupEmailInput">
-      <input type="text" name="password" placeholder="Password" id="SignupPasswordInput">
-      <input type="text" name="password" placeholder="Verification" id="SignupVerificationInput">
-      <div id="signup-button">Signup</div>
-    </div>
-    <div class="header">
-      <h1 class="headertext">Coworking Madison</h1>
-      <button id="login">Login</button>
-      <button id="signup">Signup</button>
+     <!--  Sign up modal  -->
+     <div class="modal" id="signup_modal">
+        <div class="modal-background" id="signup_modalbg"></div>
+        <div class="modal-content p-6 has-background-danger">
+            <h1 class="is-size-1 title has-text-white has-text-centered">Sign Up!</h1>
+            <form id="signup_form" class="has-text-centered">
+                <!-- Email -->
+                <div class="field">
+                    <label class="label has-text-black is-medium mb-0">Email</label>
+                    <div class="control">
+                        <input type="email" id="email">
+                    </div>
 
+                </div>
+                <!-- Password -->
+                <div class="field">
+                    <label class="label has-text-black is-medium mb-0">Password</label>
+                    <div class="control">
+                        <input type="password" id="password">
+                    </div>
+                </div>
+
+
+                <!-- Submit -->
+                <div class="field">
+                    <div class="control">
+                        <button class="m-3 button is-primary is-large">Submit</button>
+                    </div>
+                </div>
+
+                <!-- Div Error -->
+                <div class="error has-text-danger">
+
+                </div>
+
+            </form>
+        </div>
     </div>
-  
+
+    <!-- Login modal -->
+
+    <div class="modal" id="login_modal">
+        <div class="modal-background" id="login_modalbg"></div>
+        <div class="modal-content p-6 has-background-danger">
+            <h1 class="is-size-1 title has-text-white has-text-centered">Sign In!</h1>
+            <form id="login_form" class="has-text-centered">
+                <!-- Email -->
+                <div class="field">
+                    <label class="label has-text-black is-medium mb-0">Email</label>
+                    <div class="control">
+                        <input type="email" id="email_">
+                    </div>
+
+                </div>
+                <!-- Password -->
+                <div class="field">
+                    <label class="label has-text-black is-medium mb-0">Password</label>
+                    <div class="control">
+                        <input type="password" id="password_">
+                    </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="field">
+                    <div class="control">
+                        <button class="m-3 button is-primary is-large">Submit</button>
+                    </div>
+                </div>
+
+                <!-- Div Error -->
+                <div class="error has-text-danger">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="navbar is-primary">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                <h1 class="title ml-3 is-italic has-text-weight-bold has-text-black">Coworking Madison</h1>
+            </div>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navbar-menu is-active">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <!-- User email -->
+                    <div id="user_email" class="signedin has-text-black has-text-weight-bold is-italic">
+                    </div>
+                </div>
+                <div id="home" class="navbar-item has-text-centered">
+                    <a id="home" class="signedin m-2 has-text-white box has-background-black-bis p-2">Home</a>
+                </div>
+                <div class="navbar-item has-text-centered">
+                    <a href="#" id="available_spaces" class="signedin m-3 has-text-white box has-background-black-bis p-2">
+                        Available Spaces</a>
+                </div>
+                <div class="navbar-item has-text-centered">
+                    <a id="signupbtn" class="signedout m-2 has-text-white box has-background-black-bis p-2">Sign
+                        Up</a>
+                </div>
+                <div class="navbar-item has-text-centered">
+                    <a id="loginbtn" class="signedout m-2 has-text-white box has-background-black-bis p-2">Login</a>
+                </div>
 
 
+            </div>
+
+        </div>
+    </div>
 
     <div class="content">
         <div class="find">
@@ -377,7 +470,7 @@
 </body>
 </html>
 <!-- Footer -->
-<!-- <footer>
+<footer>
 <div class="footer is-active mx-1 my-1">
   <div class="has-text-centered my-1">
       <a href="http://www.facebook.com">
@@ -388,4 +481,4 @@
       </a>
   </div>
 </div>
-</footer> -->
+</footer> 

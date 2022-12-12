@@ -349,3 +349,29 @@ document.querySelector("#signup-button").addEventListener("click", (e) => {
 // };
 
 // db.collection("coworkingSpaces").add(space0);
+
+let signupbtn = document.querySelector("#signupbtn");
+let signup_modal = document.querySelector("#signup_modal");
+let signup_modalbg = document.querySelector("#signup_modalbg");
+
+let loginbtn = document.querySelector("#loginbtn");
+let login_modal = document.querySelector("#login_modal");
+let login_modalbg = document.querySelector("#login_modalbg");
+
+// Sign-up modal link
+signupbtn.addEventListener("click", () => {
+  signup_modal.classList.add("is-active");
+});
+
+signup_modalbg.addEventListener("click", () => {
+  signup_modal.classList.remove("is-active");
+});
+
+// Sign-in modal link
+loginbtn.addEventListener("click", () => {
+  login_modal.classList.add("is-active");
+});
+
+login_modalbg.addEventListener("click", () => {
+  login_modal.classList.remove("is-active");
+});
