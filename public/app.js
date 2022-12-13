@@ -10,6 +10,7 @@ let code2 = document.querySelector("#code2");
 let code1 = document.querySelector("#code1");
 let search = document.querySelector("#search");
 let available_spaces = document.querySelector("#available_spaces");
+let home = document.querySelector("#home");
 
 code2.style.display = "none"
 
@@ -22,6 +23,13 @@ available_spaces.addEventListener("click", () => {
   code1.style.display = "none";
   code2.style.display = "block";
 });
+
+home.addEventListener("click", () => {
+  code1.style.display = "block";
+  code2.style.display = "none";
+});
+
+
 
 // Sign-up modal link
 signupbtn.addEventListener("click", () => {
