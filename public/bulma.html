@@ -4,413 +4,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group Project</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <script src="https://kit.fontawesome.com/8a80b728dc.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/8a80b728dc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  
-  <!-- <style>
-  .header{
-    width: 100%;
-    height: 100px;
-    border-bottom: 1px solid lightgray;
-    background-image: linear-gradient(to right, rgb(9, 187, 232), white);
-  }
-  .headertext{
-    float:left;
-    padding-left: 2.5%;
-  }
-  #login{
-    float:right;
-    padding: 10px 50px;
-    font-size: 15px;
-    margin-top: 25px;
-    margin-right: 25px;
-    background: white;
-    border: solid black 3px;
-    border-radius: 3px;
-    font-family: 'Soleil', Arial, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    transition: 100ms ease-in;
-  }
-  #login:hover{
-    cursor: pointer;
-    background-color: black;
-    border-color: white;
-    color: white;
-  }
-  #signup{
-    float:right;
-    padding: 10px 50px;
-    font-size: 15px;
-    margin-top: 25px;
-    margin-right: 25px;
-    background: white;
-    border: solid black 3px;
-    border-radius: 3px;
-    font-family: 'Soleil', Arial, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    transition: 100ms ease-in;
-  }
-  #signup:hover{
-    cursor: pointer;
-    background-color: black;
-    border-color: white;
-    color: white;
-  }
-  .signup{
-    float:right;
-    padding: 10px 50px;
-    font-size: 15px;
-    margin-top: 25px;
-    margin-right: 55px
-  }
-  .content{
-    top:100px;
-    height:400px;
-    display: flex;
-  }
-
-
-  .image{
-  float: right;
-  height: 20px;
-  }
-.image img{
-  height: 400px;
-  width: 700px;
-
-  
-}
-
-
-  .find{
-    float:left;
-    padding-left: 2.5%;
-  }
-  .check-list{
-    list-style-type: none;
-    margin: 0;
-  }
-  .list-item{
-    float: left;
-    width: 50%;
-  }
-  .search{
-    width:150px;
-    height: 50px;
-    margin-left: 200px;
-    margin-top: 25px;
-    background-color: black;
-    color: white
-  }
-
-  .tail{
-    background-color: rgb(177, 212, 221);
-    height: 35%
- }
-
-
-
-
- .suggestion{
-    float:left;
-    width:70%;
-    margin-top: 50px;
-  }
-  .suggestion-text{
-    float:left;
-    padding-left: 2.5%;
-  }
-  .suggestion-form{
-    float:left;
-    margin-left: 100px;
-  }
-  .suggestion-form-2{
-    float:right;
-  }
-  .message{
-    float:right;
-    margin-right: 80px;
-    margin-top: 70px;
-    padding: 10px;
-    border-color: white;
-    border-style: solid;
-    
-   }
-
-  #login-background{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(30,30,30,0.8);
-    align-items: center;
-    display: none;
-    opacity: 0;
-    transition: opacity 200ms ease-in;
-  }
-
-  #login-window{
-    height: 80vh;
-    width: 35%;
-    position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-    background-color: white;
-    display: none;
-    z-index: 10;
-    opacity: 0;
-    text-align: center;
-    transition: opacity 200ms ease-in;
-  }
-
-  #signup-window{
-    height: 80vh;
-    width: 35%;
-    position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-    background-color: white;
-    display: none;
-    z-index: 10;
-    opacity: 0;
-    text-align: center;
-    transition: opacity 200ms ease-in;
-  }
-
-  #logintext{
-    font-family: 'Soleil', Arial, sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 20vh;
-  }
-
-  #login-input{
-    margin-top: 3vh;
-    width: 60%;
-    height: 6vh;
-    border: solid black 1.5px;
-    border-radius: 5px;
-  }
-
-  #login-button{
-    margin-left: 20%;
-    line-height: 6vh;
-    display: block;
-    text-align: center;
-    margin-top: 3vh;
-    width: 60%;
-    height: 6vh;
-    border: solid black 1.5px;
-    border-radius: 5px;
-    font-family: 'Soleil', Arial, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    transition: 100ms ease-in;
-  }
-
-  #login-button:hover{
-    cursor: pointer;
-    background-color: black;
-    border-color: white;
-    color: white;
-  }
-
-  #signup-button{
-    margin-left: 20%;
-    line-height: 6vh;
-    display: block;
-    text-align: center;
-    margin-top: 3vh;
-    width: 60%;
-    height: 6vh;
-    border: solid black 1.5px;
-    border-radius: 5px;
-    font-family: 'Soleil', Arial, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    transition: 100ms ease-in;
-  }
-
-  #signup-button:hover{
-    cursor: pointer;
-    background-color: black;
-    border-color: white;
-    color: white;} -->
-
-  </style>
-  
-  
   <body>
-     <!--  Sign up modal  -->
-     <div class="modal" id="signup_modal">
-        <div class="modal-background" id="signup_modalbg"></div>
-        <div class="modal-content p-6 has-background-white">
-            <h1 class="is-size-1 title has-text-info has-text-centered">Sign Up!</h1>
-            <form id="signup_form" class="has-text-centered">
-                <!-- Email -->
-                <div class="field">
-                    <label class="label has-text-black is-medium mb-0">Email</label>
-                    <div class="control">
-                        <input type="email" id="email">
-                    </div>
+    <!--  Sign up modal  -->
+    <div class="modal" id="signup_modal">
+      <div class="modal-background" id="signup_modalbg"></div>
+      <div class="modal-content p-6 has-background-white">
+        <h1 class="is-size-1 title has-text-info has-text-centered">
+          Sign Up!
+        </h1>
+        <form id="signup_form" class="has-text-centered">
+          <!-- Email -->
+          <div class="field">
+            <label class="label has-text-black is-medium mb-0">Email</label>
+            <div class="control">
+              <input type="email" id="email" />
+            </div>
+          </div>
+          <!-- Password -->
+          <div class="field">
+            <label class="label has-text-black is-medium mb-0">Password</label>
+            <div class="control">
+              <input type="password" id="password" />
+            </div>
+          </div>
 
-                </div>
-                <!-- Password -->
-                <div class="field">
-                    <label class="label has-text-black is-medium mb-0">Password</label>
-                    <div class="control">
-                        <input type="password" id="password">
-                    </div>
-                </div>
+          <!-- Submit -->
+          <div class="field">
+            <div class="control">
+              <button class="m-3 button has-background-info-light is-large">
+                Submit
+              </button>
+            </div>
+          </div>
 
-
-                <!-- Submit -->
-                <div class="field">
-                    <div class="control">
-                        <button class="m-3 button has-background-info-light is-large">Submit</button>
-                    </div>
-                </div>
-
-                <!-- Div Error -->
-                <div class="error has-text-danger">
-
-                </div>
-
-            </form>
-        </div>
+          <!-- Div Error -->
+          <div class="error has-text-danger"></div>
+        </form>
+      </div>
     </div>
 
     <!-- Login modal -->
 
     <div class="modal" id="login_modal">
-        <div class="modal-background" id="login_modalbg"></div>
-        <div class="modal-content p-6 has-background-white">
-            <h1 class="is-size-1 title has-text-info has-text-centered">Login!</h1>
-            <form id="login_form" class="has-text-centered">
-                <!-- Email -->
-                <div class="field">
-                    <label class="label has-text-black is-medium mb-0">Email</label>
-                    <div class="control">
-                        <input type="email" id="email_">
-                    </div>
+      <div class="modal-background" id="login_modalbg"></div>
+      <div class="modal-content p-6 has-background-white">
+        <h1 class="is-size-1 title has-text-info has-text-centered">Login!</h1>
+        <form id="login_form" class="has-text-centered">
+          <!-- Email -->
+          <div class="field">
+            <label class="label has-text-black is-medium mb-0">Email</label>
+            <div class="control">
+              <input type="email" id="email_" />
+            </div>
+          </div>
+          <!-- Password -->
+          <div class="field">
+            <label class="label has-text-black is-medium mb-0">Password</label>
+            <div class="control">
+              <input type="password" id="password_" />
+            </div>
+          </div>
 
-                </div>
-                <!-- Password -->
-                <div class="field">
-                    <label class="label has-text-black is-medium mb-0">Password</label>
-                    <div class="control">
-                        <input type="password" id="password_">
-                    </div>
-                </div>
+          <!-- Submit -->
+          <div class="field">
+            <div class="control">
+              <button class="m-3 button has-background-info-light is-large">
+                Submit
+              </button>
+            </div>
+          </div>
 
-                <!-- Submit -->
-                <div class="field">
-                    <div class="control">
-                        <button class="m-3 button has-background-info-light is-large">Submit</button>
-                    </div>
-                </div>
-
-                <!-- Div Error -->
-                <div class="error has-text-danger">
-
-                </div>
-
-            </form>
-        </div>
+          <!-- Div Error -->
+          <div class="error has-text-danger"></div>
+        </form>
+      </div>
     </div>
 
     <!-- Navigation bar -->
     <div class="navbar is-info">
-        <div class="navbar-brand">
-            <div class="navbar-item">
-                <h1 class="title ml-3 is-italic has-text-weight-bold has-text-black">Coworking Madison</h1>
-            </div>
-            <div class="navbar-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <h1 class="title ml-3 is-italic has-text-weight-bold has-text-black">
+            Coworking Madison
+          </h1>
         </div>
-        <div class="navbar-menu is-active">
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <!-- User email -->
-                    <div id="user_email" class="signedin has-text-black has-text-weight-bold is-italic">
-                    </div>
-                </div>
-                <div id="home" class="navbar-item has-text-centered">
-                    <a id="home" class="signedin m-2 has-text-white box has-background-black-bis p-2">Home</a>
-                </div>
-                <div class="navbar-item has-text-centered">
-                    <a href="#" id="available_spaces" class="signedin m-3 has-text-white box has-background-black-bis p-2">
-                        Available Spaces</a>
-                </div>
-                <div class="navbar-item has-text-centered">
-                    <a id="signupbtn" class="signedout m-2 has-text-white box has-background-black-bis p-2">Sign
-                        Up</a>
-                </div>
-                <div class="navbar-item has-text-centered">
-                    <a id="loginbtn" class="signedout m-2 has-text-white box has-background-black-bis p-2">Login</a>
-                </div>
-
-
-            </div>
-
+        <div class="navbar-burger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
+      <div class="navbar-menu is-active">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <!-- User email -->
+            <div
+              id="user_email"
+              class="signedin has-text-black has-text-weight-bold is-italic"
+            ></div>
+          </div>
+          <div id="home" class="navbar-item has-text-centered">
+            <a
+              id="home"
+              class="signedin m-2 has-text-white box has-background-black-bis p-2"
+              >Home</a
+            >
+          </div>
+          <div class="navbar-item has-text-centered">
+            <a
+              href="#"
+              id="available_spaces"
+              class="signedin m-3 has-text-white box has-background-black-bis p-2"
+            >
+              Available Spaces</a
+            >
+          </div>
+          <div class="navbar-item has-text-centered">
+            <a
+              id="signupbtn"
+              class="signedout m-2 has-text-white box has-background-black-bis p-2"
+              >Sign Up</a
+            >
+          </div>
+          <div class="navbar-item has-text-centered">
+            <a
+              id="loginbtn"
+              class="signedout m-2 has-text-white box has-background-black-bis p-2"
+              >Login</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <!-- content -->
     <section class="section">
       <div class="container">
         <div class="columns">
           <div class="column is-left">
-            <h1 class="has-text-weight-bold is-size-3 has-text-black">Find available coworking spaces</h1>
-            <h2 class="is-size-5">Check the boxes that describe the coworking space you're looking for. Select search to find results</h2>
+            <h1 class="has-text-weight-bold is-size-3 has-text-black">
+              Find available coworking spaces
+            </h1>
+            <h2 class="is-size-5">
+              Check the boxes that describe the coworking space you're looking
+              for. Select search to find results
+            </h2>
             <p class="mt-2">
               <label class="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" />
                 Private office
               </label>
             </p>
             <p>
               <label class="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" />
                 General Coworking
               </label>
             </p>
             <p>
               <label class="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" />
                 Meeting & Conference Rooms
               </label>
             </p>
             <p>
               <label class="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" />
                 Events & Community
               </label>
             </p>
             <p>
               <label class="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" />
                 Parking
               </label>
             </p>
             <p class="mb-2">
               <label class="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" />
                 Open 24/7
               </label>
             </p>
             <button class="button is-medium is-black mt-2">Search</button>
-            
           </div>
           <div class="column">
             <figure class="image">
-              <img src="coworking spaces.jpeg">
+              <img src="coworking spaces.jpeg" />
             </figure>
           </div>
         </div>
@@ -455,48 +242,50 @@
             <p class="has-text-black">
               <a href="https://100state.com/">100 State</a>
             </p>
-            <p class="has-text-black">
-              (608) 609-6716
-            </p>
-
+            <p class="has-text-black">(608) 609-6716</p>
           </div>
           <div class="column has-background-info-light is-one-third">
             <p class="has-text-black has-text-weight-bold">New to Madison?</p>
             <p class="has-text-black">
-              <a href="https://www.visitmadison.com/things-to-do/">Things To Do In Madison</a>
+              <a href="https://www.visitmadison.com/things-to-do/"
+                >Things To Do In Madison</a
+              >
             </p>
             <p class="has-text-black">
-              <a href="https://madisonbiz.com/members/business-directory/">Madison Business Directory</a>
+              <a href="https://madisonbiz.com/members/business-directory/"
+                >Madison Business Directory</a
+              >
             </p>
             <p class="has-text-black">
-              <a href="https://restaurantclicks.com/best-restaurants-madison-wi/">Top Madison Restaurants</a>
+              <a
+                href="https://restaurantclicks.com/best-restaurants-madison-wi/"
+                >Top Madison Restaurants</a
+              >
             </p>
-
           </div>
           <div class="column has-background-info-light is-one-third">
             <p class="has-text-black has-text-weight-bold">New to Coworking?</p>
             <p class="has-text-black">
-              <a href="https://drop-desk.com/what-is-coworking">What Is Coworking?</a>
+              <a href="https://drop-desk.com/what-is-coworking"
+                >What Is Coworking?</a
+              >
             </p>
             <p class="has-text-black">
-              <a href="https://hbr.org/2015/05/why-people-thrive-in-coworking-spaces">Why People Thrive In Coworking Spaces</a>
+              <a
+                href="https://hbr.org/2015/05/why-people-thrive-in-coworking-spaces"
+                >Why People Thrive In Coworking Spaces</a
+              >
             </p>
             <p class="has-text-black">
-              <a href="https://www.thecannon.com/blog/what-makes-a-good-coworking-space">What Makes A Good Coworking Space</a>
+              <a
+                href="https://www.thecannon.com/blog/what-makes-a-good-coworking-space"
+                >What Makes A Good Coworking Space</a
+              >
             </p>
-
-
           </div>
-          
         </div>
-
       </div>
-      
     </section>
-
-    
-
-
 
     <!-- <div class="tail">
       <div class="suggestion">
@@ -535,7 +324,7 @@
       </div>
     </div>
 </div>  -->
-<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
@@ -547,25 +336,22 @@
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
-
-    
   </body>
   <footer>
-   <div class="footer is-active mx-1 my-1">
-    <div class="has-text-centered my-1">
-          <a href="https://www.facebook.com/100State/">
-            <i class="fa-brands fa-facebook fa-3x mx-5"></i>
-          </a>
-          <a href="https://twitter.com/100state">
-            <i class="fa-brands fa-twitter fa-3x"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/100state/">
-            <i class="fa-brands fa-linkedin fa-3x mx-5"></i>
-          </a>
-          
+    <div class="footer is-active mx-1 my-1">
+      <div class="has-text-centered my-1">
+        <a href="https://www.facebook.com/100State/">
+          <i class="fa-brands fa-facebook fa-3x mx-5"></i>
+        </a>
+        <a href="https://twitter.com/100state">
+          <i class="fa-brands fa-twitter fa-3x"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/100state/">
+          <i class="fa-brands fa-linkedin fa-3x mx-5"></i>
+        </a>
+      </div>
     </div>
-    </div>
-  </footer> 
+  </footer>
   <script>
     // TODO
     // Copy **only** your firebaseConfig from Google Firebae and add it below
