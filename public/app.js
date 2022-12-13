@@ -5,6 +5,15 @@ let signup_modalbg = document.querySelector("#signup_modalbg");
 let loginbtn = document.querySelector("#loginbtn");
 let login_modal = document.querySelector("#login_modal");
 let login_modalbg = document.querySelector("#login_modalbg");
+let submitbtn = document.querySelector("#submitbtn");
+let code2 = document.querySelector("#code2");
+let search = document.querySelector("#search");
+
+
+search.addEventListener("click", () => {
+  code2.style.display = "none";
+});
+
 
 // Sign-up modal link
 signupbtn.addEventListener("click", () => {
@@ -344,6 +353,9 @@ document.querySelector("#signup-button").addEventListener("click", (e) => {
       signup_error.innerHTML = `<p> ${error.message} </p>`;
     });
 });
+
+
+
 
 // let space1 = {
 //   name: "Spaces Capitol East District",
