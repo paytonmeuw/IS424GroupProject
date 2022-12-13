@@ -548,44 +548,45 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
 
-    <script>
-      // TODO
-      // Copy **only** your firebaseConfig from Google Firebae and add it below
+    
+  </body>
+  <footer>
+   <div class="footer is-active mx-1 my-1">
+    <div class="has-text-centered my-1">
+          <a href="http://www.facebook.com">
+            <i class="fa-brands fa-facebook fa-3x mx-5"></i>
+          </a>
+          <a href="http://www.twitter.com">
+            <i class="fa-brands fa-twitter fa-3x"></i>
+          </a>
+    </div>
+    </div>
+  </footer> 
+  <script>
+    // TODO
+    // Copy **only** your firebaseConfig from Google Firebae and add it below
 
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyBEfze8nUXtnDFc354vGtCSqSGI1ny91kQ",
-        authDomain: "coworkingmadison.firebaseapp.com",
-        projectId: "coworkingmadison",
-        storageBucket: "coworkingmadison.appspot.com",
-        messagingSenderId: "592765061167",
-        appId: "1:592765061167:web:4c848e44fb774df63ddeda",
-        measurementId: "G-NS0HB0R3G0",
-      };
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBEfze8nUXtnDFc354vGtCSqSGI1ny91kQ",
+      authDomain: "coworkingmadison.firebaseapp.com",
+      projectId: "coworkingmadison",
+      storageBucket: "coworkingmadison.appspot.com",
+      messagingSenderId: "592765061167",
+      appId: "1:592765061167:web:4c848e44fb774df63ddeda",
+      measurementId: "G-NS0HB0R3G0",
+    };
 
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      // define authentication variable
-      let auth = firebase.auth();
-      let db = firebase.firestore();
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // define authentication variable
+    let auth = firebase.auth();
+    let db = firebase.firestore();
 
-      // define a storage reference
-      let ref = firebase.storage().ref();
-    </script>
-    <!-- make sure to add your own js file as the last line in index.html file -->
-    <script src="app.js"></script>
-</body>
+    // define a storage reference
+    let ref = firebase.storage().ref();
+  </script>
+  <!-- make sure to add your own js file as the last line in index.html file -->
+  <script src="app.js"></script>
 </html>
 <!-- Footer -->
-<footer>
-<div class="footer is-active mx-1 my-1">
-  <div class="has-text-centered my-1">
-      <a href="http://www.facebook.com">
-          <i class="fa-brands fa-facebook fa-3x mx-5"></i>
-      </a>
-      <a href="http://www.twitter.com">
-          <i class="fa-brands fa-twitter fa-3x"></i>
-      </a>
-  </div>
-</div>
-</footer> 
