@@ -7,11 +7,14 @@ let login_modal = document.querySelector("#login_modal");
 let login_modalbg = document.querySelector("#login_modalbg");
 let submitbtn = document.querySelector("#submitbtn");
 let code2 = document.querySelector("#code2");
+let code1 = document.querySelector("#code1");
 let search = document.querySelector("#search");
 
+code2.style.display = "none"
 
 search.addEventListener("click", () => {
-  code2.style.display = "none";
+  code1.style.display = "none";
+  code2.style.display = "block";
 });
 
 
