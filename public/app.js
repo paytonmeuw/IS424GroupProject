@@ -9,6 +9,7 @@ let submitbtn = document.querySelector("#submitbtn");
 let code2 = document.querySelector("#code2");
 let code1 = document.querySelector("#code1");
 let search = document.querySelector("#search");
+let available_spaces = document.querySelector("#available_spaces");
 
 code2.style.display = "none"
 
@@ -17,6 +18,10 @@ search.addEventListener("click", () => {
   code2.style.display = "block";
 });
 
+available_spaces.addEventListener("click", () => {
+  code1.style.display = "none";
+  code2.style.display = "block";
+});
 
 // Sign-up modal link
 signupbtn.addEventListener("click", () => {
