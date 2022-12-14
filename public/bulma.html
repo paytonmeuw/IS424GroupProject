@@ -80,7 +80,10 @@
           <!-- Submit -->
           <div class="field">
             <div class="control">
-              <button class="m-3 button has-background-info-light is-large" id="submitbtn">
+              <button
+                class="m-3 button has-background-info-light is-large"
+                id="submitbtn"
+              >
                 Submit
               </button>
             </div>
@@ -118,7 +121,7 @@
           <div id="home" class="navbar-item has-text-centered">
             <a
               id="home"
-              class="signedin m-2 has-text-white box has-background-black-bis p-2"
+              class="m-2 has-text-white box has-background-black-bis p-2"
               >Home</a
             >
           </div>
@@ -126,7 +129,7 @@
             <a
               href="#"
               id="available_spaces"
-              class="signedin m-3 has-text-white box has-background-black-bis p-2"
+              class="m-3 has-text-white box has-background-black-bis p-2"
             >
               Available Spaces</a
             >
@@ -134,21 +137,21 @@
           <div class="navbar-item has-text-centered">
             <a
               id="signupbtn"
-              class="signedout m-2 has-text-white box has-background-black-bis p-2"
+              class="loggedout m-2 has-text-white box has-background-black-bis p-2"
               >Sign Up</a
             >
           </div>
           <div class="navbar-item has-text-centered">
             <a
               id="loginbtn"
-              class="signedout m-2 has-text-white box has-background-black-bis p-2"
+              class="loggedout m-2 has-text-white box has-background-black-bis p-2"
               >Login</a
             >
           </div>
           <div class="navbar-item has-text-centered">
             <a
               id="signoutbtn"
-              class="signedout m-2 has-text-white box has-background-black-bis p-2"
+              class="loggedin m-2 has-text-white box has-background-black-bis p-2"
               >Sign Out</a
             >
           </div>
@@ -203,7 +206,9 @@
                 Open 24/7
               </label>
             </p>
-            <button class="button is-medium is-black mt-2", id="search">Search</button>
+            <button class="button is-medium is-black mt-2" , id="search">
+              Search
+            </button>
           </div>
           <div class="column">
             <figure class="image">
@@ -239,8 +244,6 @@
       <p id="details"></p>
 
     </div> -->
-
-
 
     <!-- <div class="tail">
       <div class="suggestion">
@@ -293,10 +296,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
 
     <div id="code2">
-  
       <div class="content">
         <h3 style="text-align: center">Available Coworking Spaces</h3>
-  
+
         <div class="container">
           <div class="p">
             <img src="brix.webp" alt="space" width="400" height="300" />
@@ -307,7 +309,12 @@
             <p id="space5">100 state</p>
           </div>
           <div class="p">
-            <img src="capitoleast1.avif" alt="space2" width="400" height="300" />
+            <img
+              src="capitoleast1.avif"
+              alt="space2"
+              width="400"
+              height="300"
+            />
             <p id="space2" onclick="location.href='code3.html'">
               Spaces Capital East District
             </p>
@@ -391,63 +398,62 @@
       </div>
     </div>
 
- <!-- footer information  -->
+    <!-- footer information  -->
 
- <section>
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column has-background-info-light is-one-third">
-        <p class="has-text-black has-text-weight-bold">
-          Coworking Madison Affiliation
-        </p>
-        <p class="has-text-black">
-          <a href="https://100state.com/">100 State</a>
-        </p>
-        <p class="has-text-black">(608) 609-6716</p>
+    <section>
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-background-info-light is-one-third">
+            <p class="has-text-black has-text-weight-bold">
+              Coworking Madison Affiliation
+            </p>
+            <p class="has-text-black">
+              <a href="https://100state.com/">100 State</a>
+            </p>
+            <p class="has-text-black">(608) 609-6716</p>
+          </div>
+          <div class="column has-background-info-light is-one-third">
+            <p class="has-text-black has-text-weight-bold">New to Madison?</p>
+            <p class="has-text-black">
+              <a href="https://www.visitmadison.com/things-to-do/"
+                >Things To Do In Madison</a
+              >
+            </p>
+            <p class="has-text-black">
+              <a href="https://madisonbiz.com/members/business-directory/"
+                >Madison Business Directory</a
+              >
+            </p>
+            <p class="has-text-black">
+              <a
+                href="https://restaurantclicks.com/best-restaurants-madison-wi/"
+                >Top Madison Restaurants</a
+              >
+            </p>
+          </div>
+          <div class="column has-background-info-light is-one-third">
+            <p class="has-text-black has-text-weight-bold">New to Coworking?</p>
+            <p class="has-text-black">
+              <a href="https://drop-desk.com/what-is-coworking"
+                >What Is Coworking?</a
+              >
+            </p>
+            <p class="has-text-black">
+              <a
+                href="https://hbr.org/2015/05/why-people-thrive-in-coworking-spaces"
+                >Why People Thrive In Coworking Spaces</a
+              >
+            </p>
+            <p class="has-text-black">
+              <a
+                href="https://www.thecannon.com/blog/what-makes-a-good-coworking-space"
+                >What Makes A Good Coworking Space</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="column has-background-info-light is-one-third">
-        <p class="has-text-black has-text-weight-bold">New to Madison?</p>
-        <p class="has-text-black">
-          <a href="https://www.visitmadison.com/things-to-do/"
-            >Things To Do In Madison</a
-          >
-        </p>
-        <p class="has-text-black">
-          <a href="https://madisonbiz.com/members/business-directory/"
-            >Madison Business Directory</a
-          >
-        </p>
-        <p class="has-text-black">
-          <a
-            href="https://restaurantclicks.com/best-restaurants-madison-wi/"
-            >Top Madison Restaurants</a
-          >
-        </p>
-      </div>
-      <div class="column has-background-info-light is-one-third">
-        <p class="has-text-black has-text-weight-bold">New to Coworking?</p>
-        <p class="has-text-black">
-          <a href="https://drop-desk.com/what-is-coworking"
-            >What Is Coworking?</a
-          >
-        </p>
-        <p class="has-text-black">
-          <a
-            href="https://hbr.org/2015/05/why-people-thrive-in-coworking-spaces"
-            >Why People Thrive In Coworking Spaces</a
-          >
-        </p>
-        <p class="has-text-black">
-          <a
-            href="https://www.thecannon.com/blog/what-makes-a-good-coworking-space"
-            >What Makes A Good Coworking Space</a
-          >
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
   </body>
   <footer>
     <div class="footer is-active mx-1 my-1">

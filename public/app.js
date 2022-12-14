@@ -315,41 +315,41 @@ const signupWindow = document.getElementById("signup-window");
 // }
 // fetchdata13();
 
-document.getElementById("login").onclick = function () {
-  loginBackground.style.display = "block";
-  loginWindow.style.display = "block";
-  setTimeout(function () {
-    loginBackground.style.opacity = "1";
-    loginWindow.style.opacity = "1";
-  }, 50);
-};
-document.getElementById("signup").onclick = function () {
-  loginBackground.style.display = "block";
-  signupWindow.style.display = "block";
-  setTimeout(function () {
-    loginBackground.style.opacity = "1";
-    signupWindow.style.opacity = "1";
-  }, 50);
-};
+// document.getElementById("login").onclick = function () {
+//   loginBackground.style.display = "block";
+//   loginWindow.style.display = "block";
+//   setTimeout(function () {
+//     loginBackground.style.opacity = "1";
+//     loginWindow.style.opacity = "1";
+//   }, 50);
+// };
+// document.getElementById("signup").onclick = function () {
+//   loginBackground.style.display = "block";
+//   signupWindow.style.display = "block";
+//   setTimeout(function () {
+//     loginBackground.style.opacity = "1";
+//     signupWindow.style.opacity = "1";
+//   }, 50);
+// };
 
-loginBackground.onclick = function () {
-  loginBackground.style.opacity = "0";
-  loginWindow.style.opacity = "0";
-  signupWindow.style.opacity = "0";
-  setTimeout(function () {
-    loginBackground.style.display = "none";
-    loginWindow.style.display = "none";
-    signupWindow.style.display = "none";
-  }, 200);
-};
+// loginBackground.onclick = function () {
+//   loginBackground.style.opacity = "0";
+//   loginWindow.style.opacity = "0";
+//   signupWindow.style.opacity = "0";
+//   setTimeout(function () {
+//     loginBackground.style.display = "none";
+//     loginWindow.style.display = "none";
+//     signupWindow.style.display = "none";
+//   }, 200);
+// };
 
 //attach sign up --> connect sign up and login with firebase database
-document.querySelector("#signup-button").addEventListener("click", (e) => {
+document.querySelector("#signup_form").addEventListener("submit", (e) => {
   e.preventDefault();
   let email = document.querySelector(`#SignupEmailInput`).value;
   let password = document.querySelector(`#SignupPasswordInput`).value;
-  console.log(email);
-  console.log(password);
+  // console.log(email);
+  // console.log(password);
   // pass values to firebase
   // sign up user
   auth
@@ -357,7 +357,7 @@ document.querySelector("#signup-button").addEventListener("click", (e) => {
     .then(() => {
       console.log("user created successfully");
       // close the modal
-      signupModal.classList.remove("is-active");
+      signup_modal.classList.remove("is-active");
       // reset form
       signup_form.reset();
     })
@@ -367,6 +367,79 @@ document.querySelector("#signup-button").addEventListener("click", (e) => {
       signup_error.innerHTML = `<p> ${error.message} </p>`;
     });
 });
+
+// signing users in
+let login_form = document.querySelector("#login_form");
+login_form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let email = document.querySelector(`#email_`).value;
+  let password = document.querySelector(`#password_`).value;
+
+  auth
+    .signInWithEmailAndPassword(email, password)
+    .then((userCredentials) => {
+      console.log(
+        userCredentials.user.email +
+          " with the uid" +
+          userCredentials.user.uid +
+          " is logged in"
+      );
+
+      login_modal.classList.remove("is-active");
+      // reset form
+      login_form.rest;
+    })
+
+    .catch((error) => {
+      console.log(error.message);
+      let signin_error = document.querySelector("#signin_error");
+      signin_error.innerHTMl = `<p> ${error.message}</p>`;
+    });
+});
+
+// signing out
+
+let signoutbtn = document.querySelector("#signoutbtn");
+
+signoutbtn.addEventListener("click", (e) => {
+  auth.signOut().then((msg) => {
+    console.log("user signed out!");
+  });
+});
+
+let loggedoutlinks = document.querySelectorAll("loggedout");
+let loggedinlinks = document.querySelectorAll("loggedin");
+
+function configureNav(user) {
+  // check if user is passed to function (signed in)
+  if (user) {
+    document.querySelector(
+      "#welcome_user"
+    ).innerHTML = `Welcome ${auth.currentUser.email}`;
+    // show logged in links
+    loggedinlinks.forEach((link) => {
+      link.classList.remove("is-hidden");
+    });
+    // hide logged out
+    loggedoutlinks.forEach((link) => {
+      link.classList.remove("is-hidden");
+    });
+    // hide log in
+    loggedinlinks.forEach((link) => {
+      link.classList.add("is-hidden");
+    });
+  }
+}
+//keep track of user authentication status (signin or signed out)
+// auth.onAuthStateChanged((user) => {
+//   if (user) {
+//     console.log("user is now signed in");
+//     configureNav(user);
+//   } else {
+//     console.log("user is now signed out");
+//     configureNav(user);
+//   }
+// });
 
 // let space1 = {
 //   name: "Spaces Capitol East District",
