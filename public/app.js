@@ -407,8 +407,8 @@ signoutbtn.addEventListener("click", (e) => {
   });
 });
 
-let loggedoutlinks = document.querySelectorAll("loggedout");
-let loggedinlinks = document.querySelectorAll("loggedin");
+let loggedoutlinks = document.querySelectorAll(".loggedout");
+let loggedinlinks = document.querySelectorAll(".loggedin");
 
 function configureNav(user) {
   // check if user is passed to function (signed in)
