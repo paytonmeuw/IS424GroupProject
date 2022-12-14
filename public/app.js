@@ -411,22 +411,32 @@ let loggedoutlinks = document.querySelectorAll(".loggedout");
 let loggedinlinks = document.querySelectorAll(".loggedin");
 
 function configureNav(user) {
+  console.log(loggedoutlinks);
+  console.log(loggedinlinks);
+  // alert('k')
   // check if user is passed to function (signed in)
   if (user) {
     document.querySelector(
       "#welcome_user"
     ).innerHTML = `Welcome ${auth.currentUser.email}`;
     // show logged in links
+
     loggedinlinks.forEach((link) => {
       link.classList.remove("is-hidden");
     });
     // hide logged out
     loggedoutlinks.forEach((link) => {
-      link.classList.remove("is-hidden");
-    });
-    // hide log in
-    loggedinlinks.forEach((link) => {
       link.classList.add("is-hidden");
+    });
+  } else {
+    loggedinlinks.forEach((link) => {
+      // alert('logged out - loggedinlinks')
+      link.classList.add("is-hidden");
+    });
+    // hide logged out
+    loggedoutlinks.forEach((link) => {
+      //  alert('logged out - loggedoutlinks')
+      link.classList.remove("is-hidden");
     });
   }
 }
