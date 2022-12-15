@@ -18,6 +18,7 @@ code2.style.display = "none";
 available_spaces.addEventListener("click", () => {
   code1.style.display = "none";
   code2.style.display = "block";
+  fetchdata();
 });
 
 home.addEventListener("click", () => {
@@ -183,8 +184,6 @@ async function fetchdata(filter) {
     document.querySelector("#space").innerHTML += html;
   });
 }
-
-fetchdata();
 
 
 // check 
