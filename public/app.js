@@ -14,10 +14,6 @@ let home = document.querySelector("#home");
 
 code2.style.display = "none";
 
-search.addEventListener("click", () => {
-  code1.style.display = "none";
-  code2.style.display = "block";
-});
 
 available_spaces.addEventListener("click", () => {
   code1.style.display = "none";
@@ -51,297 +47,7 @@ const loginBackground = document.getElementById("login-background");
 const loginWindow = document.getElementById("login-window");
 const signupWindow = document.getElementById("signup-window");
 
-// Pulling details from firebase database
-function fetchdata1() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "Brix Coworking")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space1").innerHTML = html;
-    });
-}
-fetchdata1();
-function fetchdata2() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "Spaces Capitol East District")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space2").innerHTML = html;
-    });
-}
-fetchdata2();
-function fetchdata3() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "Serendipity Labs")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space3").innerHTML = html;
-    });
-}
-fetchdata3();
-function fetchdata4() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "Expansive Madison")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space4").innerHTML = html;
-    });
-}
-fetchdata4();
 
-function fetchdata5() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "100 State")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space5").innerHTML = html;
-    });
-}
-fetchdata5();
-
-function fetchdata6() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "Horizon Coworking")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space6").innerHTML = html;
-    });
-}
-fetchdata6();
-function fetchdata7() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "Lodgic Workplace")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space7").innerHTML = html;
-    });
-}
-fetchdata7();
-function fetchdata8() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "Urban Office Co")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space8").innerHTML = html;
-    });
-}
-fetchdata8();
-function fetchdata9() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "Progress Center for Black Women")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space9").innerHTML = html;
-    });
-}
-fetchdata9();
-function fetchdata10() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "StartingBlock Madison")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space10").innerHTML = html;
-    });
-}
-fetchdata10();
-function fetchdata11() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "Matrix Coworking")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space11").innerHTML = html;
-    });
-}
-fetchdata11();
-function fetchdata12() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "Synergy Coworking")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space12").innerHTML = html;
-    });
-}
-fetchdata12();
-function fetchdata13() {
-  db.collection("coworkingSpaces")
-    .where("name", "==", "Office Evolution")
-    .get()
-    .then((snapshot) => {
-      let mydocs = snapshot.docs;
-      let html = ``;
-      mydocs.forEach((mydoc) => {
-        html += `<p> ${mydoc.data().name} </p> <p> ${
-          mydoc.data().description
-        } </p> <p> ${mydoc.data().address} </p> <p> ${
-          mydoc.data().hours
-        } </p> <p> ${mydoc.data().company_email} </p> <p> ${
-          mydoc.data().phone
-        } </p> <p> ${mydoc.data().website} </p>`;
-      });
-      document.querySelector("#space13").innerHTML = html;
-    });
-}
-// fetchdata13();
-
-// document.getElementById("login").onclick = function () {
-//   loginBackground.style.display = "block";
-//   loginWindow.style.display = "block";
-//   setTimeout(function () {
-//     loginBackground.style.opacity = "1";
-//     loginWindow.style.opacity = "1";
-//   }, 50);
-// };
-// document.getElementById("signup").onclick = function () {
-//   loginBackground.style.display = "block";
-//   signupWindow.style.display = "block";
-//   setTimeout(function () {
-//     loginBackground.style.opacity = "1";
-//     signupWindow.style.opacity = "1";
-//   }, 50);
-// };
-
-// loginBackground.onclick = function () {
-//   loginBackground.style.opacity = "0";
-//   loginWindow.style.opacity = "0";
-//   signupWindow.style.opacity = "0";
-//   setTimeout(function () {
-//     loginBackground.style.display = "none";
-//     loginWindow.style.display = "none";
-//     signupWindow.style.display = "none";
-//   }, 200);
-// };
 
 //attach sign up --> connect sign up and login with firebase database
 document.querySelector("#signup_form").addEventListener("submit", (e) => {
@@ -449,4 +155,59 @@ auth.onAuthStateChanged((user) => {
     console.log("user is now signed out");
     configureNav(user);
   }
+});
+
+
+// Pulling details from firebase database
+async function fetchdata(filter) {
+  let data = db.collection("coworkingSpaces");
+  document.querySelector("#space").innerHTML = "";
+  if (filter && filter.length > 0) {
+    for (let i = 0; i < filter.length; i++) {
+      data = data.where(filter[i], "==", true);
+    }
+  }
+  data.get().then((snapshot) => {
+    let html = ``;
+    let mydocs = snapshot.docs;
+    mydocs.forEach((mydoc) => {
+      html += ` <img src=${mydoc.data().image_url} width="400" height="300">
+      <p> ${mydoc.data().name} </p> <p> ${
+        mydoc.data().description
+      } </p> <p> ${mydoc.data().address} </p> <p> ${
+        mydoc.data().hours
+      } </p> <p> ${mydoc.data().company_email} </p> <p> ${
+        mydoc.data().phone
+      } </p> <p> ${mydoc.data().website} </p>`;
+    });
+    document.querySelector("#space").innerHTML += html;
+  });
+}
+
+fetchdata();
+
+
+// check 
+const checkboxOffice = document.querySelector('#office');
+const checkboxMeeting = document.querySelector('#meeting');
+const checkboxEvent = document.querySelector('#event');
+const checkboxParking = document.querySelector('#parking');
+
+search.addEventListener("click", () => {
+  code1.style.display = "none";
+  code2.style.display = "block";
+  let filterTag = []
+  if (checkboxOffice.checked == true){
+    filterTag.push("private_office");
+  }
+  if (checkboxMeeting.checked == true){
+    filterTag.push("meeting_rooms");
+  }
+  if (checkboxEvent.checked == true){
+    filterTag.push("events");
+  }
+  if (checkboxParking.checked == true){
+    filterTag.push("parking");
+  }
+  fetchdata(filterTag);
 });
