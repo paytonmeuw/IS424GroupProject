@@ -8,13 +8,25 @@ I want to be able to access detailed information about coworking sites
 
 Tasks:
 
+<img width="424" alt="Screen Shot 2022-12-16 at 1 21 01 PM" src="https://user-images.githubusercontent.com/70721470/208173068-586ea067-64b4-4a41-9f3d-91ebf4e7d389.png">
+
+
+
 Trello: https://trello.com/b/IbYhDJZ2/is-424-group-project
 
 Burndown chart:
 
+<img width="627" alt="Screen Shot 2022-12-16 at 1 21 23 PM" src="https://user-images.githubusercontent.com/70721470/208173123-81183b37-b4d8-4af6-87ae-417a3f3cb4fa.png">
+
 Burndown Chart on Nov 30th
 
+
+<img width="614" alt="Screen Shot 2022-12-16 at 1 21 38 PM" src="https://user-images.githubusercontent.com/70721470/208173178-348a2d89-f89d-4db2-bf45-19ab6959160e.png">
+
 Burndown Chart on Dec. 8 when new work was added
+
+
+<img width="618" alt="Screen Shot 2022-12-16 at 1 21 57 PM" src="https://user-images.githubusercontent.com/70721470/208173224-5d84f6f0-5cee-4b54-9c8e-4c192f67216c.png">
 
 Burndown Chart at Project’s Completion
 
@@ -134,6 +146,7 @@ I think it went well to have time with the professor to get feedback and help on
 c. What didn’t go well? Why not?
 
 This sprint was more difficult because of the fact that we decided to switch our project to using bulma and to be a one page application. This change came after we received feedback from the professor that he would recommend for us to do it this way. This was difficult because we had most of the original code working within multiple files but had to change it all. It was a lot of work and we had wished we received this feedback earlier to initially code a one page application using bulma.
+
 The timing of this sprint also brought some difficulties. Since it started right after the thanksgiving break we felt like there was less motivation in the first week. We were all coming off a relaxing break at home and it was difficult to jump back into the project. By the second week our work picked up as we approached the deadline for milestone 4. The timing was also difficult due to the exam we had during the first week of the sprint. We didn’t have as much time during the first week for project work since we were all so focused on studying the exam topics.
 
 d. How can you make things better next time?
