@@ -34,9 +34,11 @@ Burndown Chart at Project’s Completion
 
 
 Daily Scrum #1:
+
 Ashley:
 a. What did you do yesterday?
 Began working on implementing the connection of signing in and loging on the website with the google firebase.
+
 b. What are you planning to do today?
 Finish establishing the login and sign up tabs in the navigation bar, and if possible work on implementing a loggedin and loggedout function for the rest of the website.
 
