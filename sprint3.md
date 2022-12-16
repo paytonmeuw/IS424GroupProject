@@ -3,7 +3,9 @@ Website Link: https://coworkingmadison.web.app/bulma.html
 Github Repo: https://github.com/paytonmeuw/IS424GroupProject
 
 User Stories:
+
 I want to search for coworking spaces on a seamless website
+
 I want to be able to access detailed information about coworking sites
 
 Tasks:
@@ -30,10 +32,13 @@ Burndown Chart on Dec. 8 when new work was added
 
 Burndown Chart at Project’s Completion
 
+
 Daily Scrum #1:
+
 Ashley:
 a. What did you do yesterday?
 Began working on implementing the connection of signing in and loging on the website with the google firebase.
+
 b. What are you planning to do today?
 Finish establishing the login and sign up tabs in the navigation bar, and if possible work on implementing a loggedin and loggedout function for the rest of the website.
 
@@ -80,12 +85,16 @@ Work with the professor during class to develop correct code to show database in
 c. Any problems are you facing?
 A little unsure of code since we have not done exact things in class. Hoping to relieve these problems with help from the professor.
 
+
 Daily Scrum #2:
+
 Ashley:
 a. What did you do yesterday?
 Successfully got the sign up, sign in, and sign out features to work on the website. Began looking at creating the loggedin and loggedout functions of previous projects to pull in and incorporate within Coworking Madison
+
 b. What are you planning to do today?
 I plan on completing the loggedin and loggedout functions in order to get the website to show features only users who are signed in can see. This would also involve including class lists within the html of the website.
+
 c. Any problems are you facing?
 My loggedin and loggedout functions are correct and are not presenting errors in the console, but are still not working in the actual presentation of the website. I think there might be an error with my classes but plan on investigating this today as well and additionally get guidance from the professor.
 
@@ -131,6 +140,7 @@ I am planning to create a javascript testing file based on what we learned in cl
 
 c. Any problems are you facing?
 No problems besides the stress of the fast approaching deadline.
+
 
 Sprint Review:
 
